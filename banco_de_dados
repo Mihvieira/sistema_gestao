@@ -1,0 +1,47 @@
+import mysql.connector
+import dados_privados
+
+class BancoDeDados:
+    # concexão com MySql Server e criando cursor
+    def conexao(self):
+        self.conn = mysql.connector.connect(
+            host= nome_host,
+            user=nome_user,
+            password=nome_password,
+            database=nome_database
+        )
+        print('conexão bem sucedida')
+
+        self.mycursor = self.conn.cursor()
+
+    def desconectar(self):
+        self.mycursor.close()
+        self.conn.close()
+
+    def inserir_dados(self, valor):
+        self.conexao()
+        self.insert = valor
+        
+        self.mycursor.execute(self.insert)
+        
+        self.conn.commit()
+        
+        self.desconectar()
+        
+
+    def consulta_bd(self, query):
+        self.conexao()
+        self.mycursor.execute(query)
+        self.dados = self.mycursor.fetchall()
+        self.desconectar()
+        return self.dados
+
+    def atualizar(self, valor):
+        self.conexao()
+        
+        self.atualiza = valor
+        self.mycursor.execute(self.atualiza)
+        
+        self.conn.commit()
+        
+        self.desconectar()
