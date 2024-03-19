@@ -9,7 +9,7 @@ Em construção
 ## Tecnologias utilizadas:
 * Python 3.12
   * Customtkinter
-  * SQLITE
+  * MySQL
 
 
 
