@@ -28,8 +28,6 @@ class Janela(ctk.CTk):
 
         self.screen_configuration()
         self.toplevel_window = None
-        # self.show_login()
-        self.show_inicial_screen()
         # Executar janela
         self.mainloop()
 
@@ -247,6 +245,7 @@ class Eventos(ctk.CTkFrame):
         super().__init__(parent)
         self.configure(width=1360, height=718, fg_color='white')
 ```
+Ao final é preciso acrescentar à classe janela a função: self.show_inicial_screen()
 
 Tudo pronto! A tela final ficaria dessa forma:
 
