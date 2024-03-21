@@ -11,5 +11,10 @@ Em construção
   * Customtkinter
   * MySQL
 
+## Telas do App
+
+* Tela inicial:
+  
+* Tela da Agenda
 
 
