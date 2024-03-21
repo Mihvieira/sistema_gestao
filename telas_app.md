@@ -264,8 +264,7 @@ hover_color= '#0d1316'
 ```
 # Tela Agenda 
 
-![Captura de tela de 2024-03-21 15-53-10](https://github.com/Mihvieira/sistema_gestao/assets/136247614/83a55d77-5667-4803-9922-17378b3f73f1)
-
+![Captura de tela de 2024-03-21 16-07-51](https://github.com/Mihvieira/sistema_gestao/assets/136247614/d6e3ed27-2ad6-4619-89f6-0ab3e2ef5558)
 
 
 
